@@ -9,12 +9,6 @@ Simple implementation of Logistic Regression for binary classification in javasc
 #### ES6 syntax
 
 ```javascript
-import { LogisticRegression } from "./path/logreg";
-```
-
-#### npm module
-
-```javascript
 const LogisticRegression = require("./path/nn").LogisticRegression;
 ```
 

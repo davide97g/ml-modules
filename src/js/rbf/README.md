@@ -6,14 +6,6 @@ Simple implementation of Radial-Basis Function evaluation for binary classificat
 
 ### Import
 
-#### ES6 syntax
-
-```javascript
-import { RBF } from "./path/rbf";
-```
-
-#### npm module
-
 ```javascript
 const RBF = require("./path/rbf");
 ```

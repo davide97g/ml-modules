@@ -6,14 +6,6 @@ Simple implementation of Random Forests for binary classification in javascript.
 
 ### Import
 
-#### ES6 syntax
-
-```javascript
-import { RandomForest } from "./path/randf";
-```
-
-#### npm module
-
 ```javascript
 const RandomForest = require("./path/randf").RandomForest;
 ```

@@ -10,14 +10,6 @@ I added something more to his work like polynomial kernel and the full SMO algor
 
 ### Import
 
-#### ES6 syntax
-
-```javascript
-import { SVM } from "./path/svm";
-```
-
-#### npm module
-
 ```javascript
 const SVM = require("./path/svm");
 ```

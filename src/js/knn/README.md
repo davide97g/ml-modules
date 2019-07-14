@@ -12,14 +12,6 @@ Choose between various distances types:
 
 ### Import
 
-#### ES6 syntax
-
-```javascript
-import { KNN } from "./path/knn";
-```
-
-#### npm module
-
 ```javascript
 const KNN = require("./path/knn");
 ```

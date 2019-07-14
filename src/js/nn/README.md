@@ -11,14 +11,6 @@ My work was just to create an interface to the convnet library.
 
 ### Import
 
-#### ES6 syntax
-
-```javascript
-import { NN } from "./path/nn";
-```
-
-#### npm module
-
 ```javascript
 const NN = require("./path/nn");
 ```

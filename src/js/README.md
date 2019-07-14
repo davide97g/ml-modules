@@ -4,14 +4,6 @@
 
 ### Import
 
-#### ES6 syntax
-
-```javascript
-import { Drawer } from "./path/drawer";
-```
-
-#### npm module
-
 ```javascript
 const Drawer = require("./path/drawer").Drawer;
 ```

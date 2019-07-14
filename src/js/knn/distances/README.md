@@ -12,14 +12,6 @@ Function to calculate distances from two vectors with n features.
 
 ### Import
 
-#### ES6 syntax
-
-```javascript
-import { Distances } from "./path/distances";
-```
-
-#### npm module
-
 ```javascript
 const Distances = require("./path/distances");
 ```
