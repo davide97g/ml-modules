@@ -30,7 +30,7 @@ Documentation can be found [here](https://davide97g.github.io/ml-modules/docs/in
 - Neural Net
   - multiple layers with costum definition
 
-All algorithms are es6 module. The files needed for the algorithm to work are located in his directory, except for the utility functions.
+All algorithms are small modules. The files needed for the algorithm to work are located in his directory, except for the utility functions.
 
 All algorithms share the basic structure.
 
