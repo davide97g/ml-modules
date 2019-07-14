@@ -1,0 +1,46 @@
+{
+  "name": "nodejs-browser-project-template",
+  "version": "1.0.0",
+  "description": "A simple template for nodejs projects running in the browser. Include webpack, travis, jest, jsdoc and coveralls configuration.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack",
+    "coveralls": "jest --coverage",
+    "docs": "./node_modules/.bin/jsdoc -c jsdoc.json",
+    "all": "npm run build && npm run coveralls && npm run docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davide97g/nodejs-browser-project-template.git"
+  },
+  "keywords": [
+    "nodejs",
+    "template",
+    "webpack",
+    "travis",
+    "jest",
+    "coveralls",
+    "ci",
+    "npm"
+  ],
+  "author": "Davide Ghiotto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davide97g/nodejs-browser-project-template/issues"
+  },
+  "homepage": "https://github.com/davide97g/nodejs-browser-project-template#readme",
+  "devDependencies": {
+    "better-docs": "^1.1.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "coveralls": "^3.0.4",
+    "css-loader": "^3.0.0",
+    "file-loader": "^4.0.0",
+    "jest": "^24.8.0",
+    "jsdoc": "^3.6.2",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.4"
+  },
+  "dependencies": {}
+}

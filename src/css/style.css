@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: whitesmoke;
+  color: whitesmoke;
+}
+
+header {
+  color: #2e2d2d;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.tech {
+  background: #2e2d2d;
+  text-align: center;
+  float: left;
+  width: 30%;
+  height: 20vh;
+  padding: 1%;
+  margin: 1%;
+}
+
+.tech h3 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.tech p {
+  padding: 5%;
+  font-size: 11pt;
+}
+
+.tech a {
+  color: lightcoral;
+}
+/*# sourceMappingURL=style.css.map */

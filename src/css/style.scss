@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: whitesmoke;
+  color: whitesmoke;
+}
+header {
+  color: rgb(46, 45, 45);
+  margin-top: 20px;
+  text-align: center;
+}
+.tech {
+  background: rgb(46, 45, 45);
+  text-align: center;
+  float: left;
+  width: 30%;
+  height: 20vh;
+  padding: 1%;
+  margin: 1%;
+  h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  p {
+    padding: 5%;
+    font-size: 11pt;
+  }
+  a {
+    color: lightcoral;
+  }
+}
