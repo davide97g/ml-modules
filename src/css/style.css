@@ -7,36 +7,103 @@
 
 body {
   background: whitesmoke;
-  color: whitesmoke;
+}
+
+#datasets {
+  width: 100%;
+  padding: 10px;
+}
+
+.coral, button {
+  background: lightcoral;
+  color: white;
+}
+
+.lightblue {
+  background: lightblue;
+  color: white;
 }
 
 header {
-  color: #2e2d2d;
-  margin-top: 20px;
-  text-align: center;
-}
-
-.tech {
-  background: #2e2d2d;
-  text-align: center;
-  float: left;
-  width: 30%;
+  padding-top: 40px;
   height: 20vh;
-  padding: 1%;
-  margin: 1%;
+  width: 100%;
+  vertical-align: middle;
 }
 
-.tech h3 {
-  margin-top: 15px;
-  margin-bottom: 5px;
+.box {
+  text-align: center;
+  display: block;
+  padding: 20px;
+  overflow: hidden;
+  margin: auto;
+  border-bottom: 2px solid lightcoral;
 }
 
-.tech p {
-  padding: 5%;
-  font-size: 11pt;
+.box canvas {
+  float: left;
 }
 
-.tech a {
-  color: lightcoral;
+.drawer {
+  float: left;
+  width: 400px;
+  height: 400px;
+}
+
+/** UI classes */
+.options {
+  float: left;
+}
+
+.title {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.algorithm,
+.draw {
+  float: left;
+}
+
+.algorithm {
+  background: lightcoral;
+  width: 200px;
+}
+
+.draw {
+  background: lightgreen;
+  width: 200px;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+/** UI classes end */
+#go {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+}
+
+.execute {
+  margin: 5px;
 }
 /*# sourceMappingURL=style.css.map */

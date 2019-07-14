@@ -1,51 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <title>Nodejs Browser Project Template</title>
-    <script type="text/javascript" src="dist/index.bundle.js"></script>
-    <link rel="stylesheet" href="src/css/style.css" />
+    <title>ml-es6-modules</title>
+    <link rel="stylesheet" type="text/css" href="src/css/style.css" />
+    <script
+      defer
+      async
+      type="text/javascript"
+      src="./dist/index.bundle.js"
+    ></script>
   </head>
-  <body>
-    <header>
-      <h1>Nodejs Browser Project Template</h1>
+  <body class="center">
+    <header class="coral">
+      <h1>Machine Learning as ES6 Modules</h1>
     </header>
-    <div>
-      <div class="tech">
-        <h3>Webpack</h3>
-        <p>
-          Automatic bundler for javascript files. Allows you to use npm module
-          inside the browser. You can find more about Webpack
-          <a href="https://webpack.js.org/">here</a>
-        </p>
+
+    <button id="go">
+      Go
+    </button>
+
+    <div id="datasets">
+      <h4>Datasets</h4>
+      <button class="datasets" id="random">Random</button>
+      <button class="datasets" id="circle">Circle</button>
+      <button class="datasets" id="multi-circle">Multi Circle</button>
+      <button class="datasets" id="gaussian">Gaussian</button>
+      <button class="datasets" id="exclusive">Exclusive</button>
+      <button class="datasets" id="spiral">Spiral</button>
+      <button class="datasets" id="stripes-v">Stripes V</button>
+      <button class="datasets" id="stripes-h">Stripes H</button>
+    </div>
+
+    <div class="box">
+      <button class="execute">Execute</button>
+      <p>SVM linear</p>
+      <div class="drawer">
+        <canvas id="svm-linear-canvas" width="400px" height="400px"></canvas>
       </div>
-      <div class="tech">
-        <h3>Travis</h3>
-        <p>
-          CI tool. You can find more about Travis
-          <a href="https://travis-ci.com/">here</a>
-        </p>
+      <div class="options" id="svm-linear-options">
+        <div class="algorithm" id="svm-linear-options-algorithm"></div>
+        <div class="draw" id="svm-linear-options-draw"></div>
       </div>
-      <div class="tech">
-        <h3>Jest</h3>
-        <p>
-          Testing framework. You can find more about Jest
-          <a href="https://jestjs.io/">here</a>
-        </p>
+    </div>
+
+    <div class="box">
+      <button class="execute">Execute</button>
+      <p>SVM poly</p>
+      <div class="drawer">
+        <canvas id="svm-poly-canvas" width="400px" height="400px"></canvas>
       </div>
-      <div class="tech">
-        <h3>Coveralls</h3>
-        <p>
-          Code coverage presentation tool. You can find more about Jest
-          <a href="https://coveralls.io/">here</a>
-        </p>
+      <div class="options" id="svm-poly-options">
+        <div class="algorithm" id="svm-poly-options-algorithm"></div>
+        <div class="draw" id="svm-poly-options-draw"></div>
       </div>
-      <div class="tech">
-        <h3>JsDoc</h3>
-        <p>
-          Documentation generator tool. You can find more about JsDoc
-          <a href="https://devdocs.io/jsdoc/">here</a>
-        </p>
+    </div>
+
+    <div class="box">
+      <button class="execute">Execute</button>
+      <p>SVM rbf</p>
+      <div class="drawer">
+        <canvas id="svm-rbf-canvas" width="400px" height="400px"></canvas>
+      </div>
+      <div class="options" id="svm-rbf-options">
+        <div class="algorithm" id="svm-rbf-options-algorithm"></div>
+        <div class="draw" id="svm-rbf-options-draw"></div>
+      </div>
+    </div>
+
+    <div class="box">
+      <button class="execute">Execute</button>
+      <p>KNN</p>
+      <div class="drawer">
+        <canvas id="knn-canvas" width="400px" height="400px"></canvas>
+      </div>
+      <div class="options" id="knn-options">
+        <div class="algorithm" id="knn-options-algorithm"></div>
+        <div class="draw" id="knn-options-draw"></div>
+      </div>
+    </div>
+    <div class="box">
+      <button class="execute">Execute</button>
+      <p>RBF</p>
+      <div class="drawer">
+        <canvas id="rbf-canvas" width="400px" height="400px"></canvas>
+      </div>
+      <div class="options" id="rbf-options">
+        <div class="algorithm" id="rbf-options-algorithm"></div>
+        <div class="draw" id="rbf-options-draw"></div>
+      </div>
+    </div>
+
+    <div class="box">
+      <button class="execute">Execute</button>
+      <p>Random Forest</p>
+      <div class="drawer">
+        <canvas id="randf-canvas" width="400px" height="400px"></canvas>
+      </div>
+      <div class="options" id="randf-options">
+        <div class="algorithm" id="randf-options-algorithm"></div>
+        <div class="draw" id="randf-options-draw"></div>
+      </div>
+    </div>
+
+    <div class="box">
+      <button class="execute">Execute</button>
+      <p>Logistic Regression</p>
+      <div class="drawer">
+        <canvas id="logreg-canvas" width="400px" height="400px"></canvas>
+      </div>
+      <div class="options" id="logreg-options">
+        <div class="algorithm" id="logreg-options-algorithm"></div>
+        <div class="draw" id="logreg-options-draw"></div>
+      </div>
+    </div>
+
+    <div class="box">
+      <button class="execute">Execute</button>
+      <p>Neural Network</p>
+      <div class="drawer">
+        <canvas id="nn-canvas" width="400px" height="400px"></canvas>
+      </div>
+      <div class="options" id="nn-options">
+        <div class="algorithm" id="nn-options-algorithm"></div>
+        <div class="draw" id="nn-options-draw"></div>
       </div>
     </div>
   </body>

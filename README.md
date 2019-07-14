@@ -4,9 +4,9 @@
 ![GitHub issues](https://img.shields.io/github/issues/davide97g/ml-modules.svg)
 [![Coverage Status](https://coveralls.io/repos/github/davide97g/ml-modules/badge.svg?branch=master)](https://coveralls.io/github/davide97g/ml-modules?branch=master)
 
-# nodejs-browser-project-template
+# ml-modules
 
-A simple template for nodejs projects running in the browser. Include webpack, travis, jest, jsdoc and coveralls configuration.
+A set of machine learning algorithms, packed as modules, ready to be used in your nodejs environment.
 
 ## Documentation
 
