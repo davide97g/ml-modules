@@ -1,8 +1,8 @@
-[![Build Status](https://travis-ci.com/davide97g/nodejs-browser-project-template.svg?branch=master)](https://travis-ci.com/davide97g/nodejs-browser-project-template)
-![GitHub repo size](https://img.shields.io/github/repo-size/davide97g/nodejs-browser-project-template.svg)
-![GitHub](https://img.shields.io/github/license/davide97g/nodejs-browser-project-template.svg)
-![GitHub issues](https://img.shields.io/github/issues/davide97g/nodejs-browser-project-template.svg)
-[![Coverage Status](https://coveralls.io/repos/github/davide97g/nodejs-browser-project-template/badge.svg?branch=master)](https://coveralls.io/github/davide97g/nodejs-browser-project-template?branch=master)
+[![Build Status](https://travis-ci.com/davide97g/ml-modules.svg?branch=master)](https://travis-ci.com/davide97g/ml-modules)
+![GitHub repo size](https://img.shields.io/github/repo-size/davide97g/ml-modules.svg)
+![GitHub](https://img.shields.io/github/license/davide97g/ml-modules.svg)
+![GitHub issues](https://img.shields.io/github/issues/davide97g/ml-modules.svg)
+[![Coverage Status](https://coveralls.io/repos/github/davide97g/ml-modules/badge.svg?branch=master)](https://coveralls.io/github/davide97g/ml-modules?branch=master)
 
 # nodejs-browser-project-template
 
@@ -10,11 +10,11 @@ A simple template for nodejs projects running in the browser. Include webpack, t
 
 ## Documentation
 
-Documentation [here](https://davide97g.github.io/nodejs-browser-project-template/docs/index.html)
+Documentation [here](https://davide97g.github.io/ml-modules/docs/index.html)
 
 ## Demo
 
-Live demo [here](https://davide97g.github.io/nodejs-browser-project-template/)
+Live demo [here](https://davide97g.github.io/ml-modules/)
 
 ## How to use this template
 
