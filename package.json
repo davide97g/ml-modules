@@ -1,6 +1,6 @@
 {
   "name": "ml-modules",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A set of machine learning algorithms, packed as modules, ready to be used in your nodejs environment.",
   "main": "./src/js/index.js",
   "scripts": {
