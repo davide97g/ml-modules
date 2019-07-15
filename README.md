@@ -17,6 +17,48 @@ A live demo is available [here](https://davide97g.github.io/ml-modules/).
 
 Documentation can be found [here](https://davide97g.github.io/ml-modules/docs/index.html).
 
+## Usage
+
+```javascript
+//import the modules
+const modules = require("ml-modules");
+//select the machine learning module you want, for example
+const SVM = modules.SVM; // support vector machine
+```
+
+## Modules
+
+Can choose from these machine learning modules:
+
+- SVM
+  ```javascript
+  const SVM = modules.SVM;
+  ```
+- KNN
+  ```javascript
+  const KNN = modules.KNN;
+  ```
+- RBF
+  ```javascript
+  const RBF = modules.RBF;
+  ```
+- RANDF
+  ```javascript
+  const RANDF = modules.RANDF;
+  ```
+- LOGREG
+  ```javascript
+  const LOGREG = modules.LOGREG;
+  ```
+- NN
+  ```javascript
+  const NN = modules.NN;
+  ```
+
+---
+
+---
+
 ## Algorithms
 
 - Support Vector Machine with different kernels:
