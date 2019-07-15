@@ -1,14 +1,39 @@
-# Drawer
+# ml-modules
 
 ## Usage
 
-### Import
-
 ```javascript
-const Drawer = require("./path/drawer").Drawer;
+//import the modules
+const modules = require("ml-modules");
+//select the machine learning module you want, for example
+const SVM = modules.SVM; // support vector machine
 ```
 
-### Variables
+## modules
+
+Can choose from these machine learning modules:
+
+- SVM
+- KNN
+- RBF
+- RANDF
+- LOGREG
+- NN
+---
+---
+## Drawer
+
+Draws the results of machine learning predictions to 2d canvas.
+
+### Usage
+
+#### Import
+
+```javascript
+const Drawer = modules.Drawer;
+```
+
+#### Variables
 
 ```javascript
 let data = [
@@ -35,19 +60,19 @@ let options = {
 };
 ```
 
-### Initialize
+#### Initialize
 
 ```javascript
 let drawer = new Drawer(algorithm, canvas, options);
 ```
 
-### Draw
+#### Draw
 
 ```javascript
 drawer.draw(data, labels);
 ```
 
-### Test
+#### Test
 
 ```javascript
 let test = [[1, 2], [2, 4], [5, 2], [-1, -1], [-4, 2], [0, -2]];
@@ -55,7 +80,7 @@ let test_labels = [1, 1, 1, -1, -1, -1];
 drawer.drawTestPoints(test, test_labels);
 ```
 
-### Options
+#### Options
 
 ```javascript
 options = {

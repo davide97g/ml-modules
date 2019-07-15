@@ -7,7 +7,14 @@ Simple implementation of Random Forests for binary classification in javascript.
 ### Import
 
 ```javascript
-const RandomForest = require("./path/randf").RandomForest;
+const modules = require("ml-modules");
+const RandomForest = modules.RANDF;
+```
+
+### Import single module
+
+```javascript
+const RandomForest = require("./path/to/randf.js");
 ```
 
 ### Variables

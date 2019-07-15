@@ -11,7 +11,14 @@ I added something more to his work like polynomial kernel and the full SMO algor
 ### Import
 
 ```javascript
-const SVM = require("./path/svm");
+const modules = require("ml-modules");
+const SVM = modules.SVM;
+```
+
+### Import single module
+
+```javascript
+const SVM = require("./path/to/svm.js");
 ```
 
 ### Variables

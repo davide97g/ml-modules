@@ -7,7 +7,14 @@ Simple implementation of Radial-Basis Function evaluation for binary classificat
 ### Import
 
 ```javascript
-const RBF = require("./path/rbf");
+const modules = require("ml-modules");
+const RBF = modules.RBF;
+```
+
+### Import single module
+
+```javascript
+const RBF = require("./path/to/rbf.js");
 ```
 
 ### Variables

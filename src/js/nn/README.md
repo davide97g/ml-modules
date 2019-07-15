@@ -12,7 +12,14 @@ My work was just to create an interface to the convnet library.
 ### Import
 
 ```javascript
-const NN = require("./path/nn");
+const modules = require("ml-modules");
+const NN = modules.NN;
+```
+
+### Import single module
+
+```javascript
+const NN = require("./path/to/nn.js");
 ```
 
 ### Variables

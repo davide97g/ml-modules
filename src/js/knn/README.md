@@ -10,10 +10,17 @@ Choose between various distances types:
 
 ## Usage
 
-### Import
+### Import from ml-modules
 
 ```javascript
-const KNN = require("./path/knn");
+const modules = require("ml-modules");
+const KNN = modules.KNN;
+```
+
+### Import single module
+
+```javascript
+const KNN = require("./path/to/knn.js");
 ```
 
 ### Variables
