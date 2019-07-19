@@ -6,7 +6,7 @@
  * @copyright Davide Ghiotto
  */
 
-const copyArray = require("./utils.js").copyArray;
+const copyArray = require("could-be-utils").array.copyArray;
 
 function fx2(v) {
   let res = copyArray(v);

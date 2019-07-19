@@ -7,7 +7,7 @@
  * Manager will notify all the subscribers (drawers) whenever a drawer call for an update.
  * @copyright Davide Ghiotto
  */
-const copyArray = require("./utils.js").copyArray;
+const copyArray = require("could-be-utils").array.copyArray;
 const boost = require("./input.js").boost;
 const Manager = function() {
   this.data = [];

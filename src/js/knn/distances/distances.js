@@ -17,6 +17,9 @@
  * //setting the grade for minkowski
  * distances.setMinkowskiDegree(2);
  */
+
+const utils = require("could-be-utils");
+
 const Distances = function() {
   this.p = 1;
   this.data = [];
@@ -31,7 +34,7 @@ Distances.prototype = {
    */
   setDataSet: function(data) {
     this.data = data;
-    this.variance = variance(data);
+    this.variance = utils.statistics.variance(data);
   },
 
   /**
@@ -115,38 +118,5 @@ Distances.prototype = {
     return Math.sqrt(sum);
   }
 };
-
-function variance(data) {
-  let avg = average(data);
-  let variance = [0, 0];
-  let N = data.length;
-  for (let i = 0; i < data[0].length; i++) {
-    for (let j = 0; j < N; j++) {
-      variance[i] += Math.pow(data[j][i] - avg[i], 2);
-    }
-    variance[i] = Math.sqrt(variance[i] / N);
-  }
-  return variance;
-}
-
-function average(data) {
-  let avg = zeros(data[0].length);
-  let N = data.length;
-  for (let i = 0; i < data[0].length; i++) {
-    for (let j = 0; j < N; j++) {
-      avg[i] += data[j][i];
-    }
-    avg[i] /= N;
-  }
-  return avg;
-}
-
-function zeros(n) {
-  let arr = new Array(n);
-  for (let i = 0; i < n; i++) {
-    arr[i] = 0;
-  }
-  return arr;
-}
 
 module.exports = Distances;

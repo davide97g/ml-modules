@@ -1,6 +1,8 @@
 // MIT License
 // Andrej Karpathy
 
+const utils = require("could-be-utils");
+
 const RandomForest = function() {};
 
 RandomForest.prototype = {
@@ -185,7 +187,7 @@ function decisionStumpTrain(data, labels, ix, options) {
   let numtries = options.numTries || 10;
 
   // choose a dimension at random and pick a best split
-  let ri = randi(0, data[0].length);
+  let ri = utils.random.randi(0, data[0].length);
   let N = ix.length;
 
   // evaluate class entropy of incoming data
@@ -194,9 +196,9 @@ function decisionStumpTrain(data, labels, ix, options) {
   let bestThr = 0;
   for (let i = 0; i < numtries; i++) {
     // pick a random splitting threshold
-    let ix1 = ix[randi(0, N)];
-    let ix2 = ix[randi(0, N)];
-    while (ix2 === ix1) ix2 = ix[randi(0, N)]; // enforce distinctness of ix2
+    let ix1 = ix[utils.random.randi(0, N)];
+    let ix2 = ix[utils.random.randi(0, N)];
+    while (ix2 === ix1) ix2 = ix[utils.random.randi(0, N)]; // enforce distinctness of ix2
 
     let a = Math.random();
     let thr = data[ix1][ri] * a + data[ix2][ri] * (1 - a);
@@ -259,9 +261,9 @@ function decision2DStumpTrain(data, labels, ix, options) {
   let ri2 = 1;
   if (data[0].length > 2) {
     // more than 2D data. Pick 2 random dimensions
-    ri1 = randi(0, data[0].length);
-    ri2 = randi(0, data[0].length);
-    while (ri2 === ri1) ri2 = randi(0, data[0].length); // must be distinct!
+    ri1 = utils.random.randi(0, data[0].length);
+    ri2 = utils.random.randi(0, data[0].length);
+    while (ri2 === ri1) ri2 = utils.random.randi(0, data[0].length); // must be distinct!
   }
 
   // evaluate class entropy of incoming data
@@ -271,7 +273,7 @@ function decision2DStumpTrain(data, labels, ix, options) {
   let dots = new Array(ix.length);
   for (let i = 0; i < numtries; i++) {
     // pick random line parameters
-    let alpha = randf(0, 2 * Math.PI);
+    let alpha = utils.random.randf(0, 2 * Math.PI);
     let w1 = Math.cos(alpha);
     let w2 = Math.sin(alpha);
 
@@ -286,9 +288,9 @@ function decision2DStumpTrain(data, labels, ix, options) {
     // let's pick two random points and make the threshold be somewhere between them.
     // for skewed datasets, the selected points will with relatively high likelihood
     // be in the high-desnity regions, so the thresholds will make sense
-    let ix1 = ix[randi(0, N)];
-    let ix2 = ix[randi(0, N)];
-    while (ix2 === ix1) ix2 = ix[randi(0, N)]; // enforce distinctness of ix2
+    let ix1 = ix[utils.random.randi(0, N)];
+    let ix2 = ix[utils.random.randi(0, N)];
+    while (ix2 === ix1) ix2 = ix[utils.random.randi(0, N)]; // enforce distinctness of ix2
     let a = Math.random();
     let dotthr = dots[ix1] * a + dots[ix2] * (1 - a);
 
@@ -352,16 +354,6 @@ function entropy(labels, ix) {
   p = (1 + p) / (N + 2); // let's be bayesian about this
   let q = (1 + N - p) / (N + 2);
   return -p * Math.log(p) - q * Math.log(q);
-}
-
-// generate random floating point number between a and b
-function randf(a, b) {
-  return Math.random() * (b - a) + a;
-}
-
-// generate random integer between a and b (b excluded)
-function randi(a, b) {
-  return Math.floor(Math.random() * (b - a) + a);
 }
 
 module.exports = RandomForest;

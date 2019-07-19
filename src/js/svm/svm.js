@@ -3,7 +3,7 @@ const linearKernel = kernels.linearKernel;
 const makePolyKernel = kernels.makePolyKernel;
 const makeRbfKernel = kernels.makeRbfKernel;
 const makeSigmoidKernel = kernels.makeSigmoidKernel;
-const utils = require('../utils.js');
+const utils = require("could-be-utils");
 
 let svm_id=1;
 const SVM = function() {
@@ -168,7 +168,7 @@ SVM.prototype = {
         //initializations
         this.N = this.data.length;
         this.D = this.data[0].length;
-        this.alpha = utils.zeros(this.N);
+        this.alpha = utils.array.zeros(this.N);
         this.b = 0.0;
         this.usew_ = false; // internal efficiency flag
 
@@ -271,7 +271,7 @@ SVM.prototype = {
 
                 // alpha_i needs updating! Pick a j to update it with
                 let j = i;
-                while (j === i) j = utils.randi(0, this.N);
+                while (j === i) j = utils.random.randi(0, this.N);
                 let Ej = this.marginOne(data[j]) - labels[j];
 
                 // calculate L and H bounds for j to ensure we're in [0 C]x[0 C] box
@@ -771,7 +771,7 @@ SVM.prototype = {
             }
 
             let counter=0;
-            let rand = utils.randi(0,indexes.length);
+            let rand = utils.random.randi(0,indexes.length);
             for(let j=rand;counter<indexes.length;j++){ //loop over all non-zero and non-C alpha, starting at a random point
                 if(j === indexes.length){
                     j=-1;
@@ -785,7 +785,7 @@ SVM.prototype = {
             }
 
             counter = 0;
-            rand = utils.randi(0,this.data.length);
+            rand = utils.random.randi(0,this.data.length);
             for(let j=rand;counter<this.data.length;j++){ //loop over all possibile i1, starting at a random point
                 if(j === this.data.length){
                     j=-1;
@@ -888,9 +888,9 @@ SVM.prototype = {
         console.info("🍀 SSCA: "+this.data.length);
         let value;
 
-        let alpha = utils.copyArray(this.alpha);
-        let labels = utils.copyArray(this.labels);
-        let data = utils.copyArray(this.data);
+        let alpha = utils.array.copyArray(this.alpha);
+        let labels = utils.array.copyArray(this.labels);
+        let data = utils.array.copyArray(this.data);
         let left = this.data.length;
 
         //check conditions for rules A,B
